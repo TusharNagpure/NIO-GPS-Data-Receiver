@@ -1,0 +1,46 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.websocket'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.websocket"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.jcraft:jsch:0.1.55'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.1' // Latest version as of 2025
+    implementation 'com.github.mik3y:usb-serial-for-android:3.3.0'
+    implementation 'org.jmdns:jmdns:3.5.5'
+
+}

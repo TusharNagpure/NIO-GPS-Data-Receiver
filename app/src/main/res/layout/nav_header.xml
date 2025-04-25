@@ -1,0 +1,24 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/colorPrimary">
+
+    <ImageView
+        android:id="@+id/headerImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="Header Icon" />
+
+    <TextView
+        android:id="@+id/headerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="GPS Data Receiver"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</LinearLayout>

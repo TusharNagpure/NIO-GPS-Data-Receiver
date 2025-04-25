@@ -1,0 +1,63 @@
+<!-- res/layout/activity_edit_device.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <Spinner
+        android:id="@+id/spinner_ips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_Dir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Target Directory" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Device Name" />
+
+    <EditText
+        android:id="@+id/et_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Host (Optional if using spinner)" />
+
+    <EditText
+        android:id="@+id/et_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Port"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+</LinearLayout>

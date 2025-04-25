@@ -1,0 +1,54 @@
+<!-- dialog_edit_device.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_edit_device"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner for IPs -->
+    <Spinner
+        android:id="@+id/spinner_ips_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_edit_device_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Device Name" />
+
+    <EditText
+        android:id="@+id/et_edit_device_host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Host" />
+
+    <EditText
+        android:id="@+id/et_edit_device_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Port"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_edit_device_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/et_edit_device_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/et_edit_device_target_directory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Target Directory" />
+
+</LinearLayout>

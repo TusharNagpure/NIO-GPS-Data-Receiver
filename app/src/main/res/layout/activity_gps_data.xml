@@ -1,0 +1,145 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar (AppBar) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="GPS Data"
+        app:titleTextColor="@android:color/white" />
+
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EDEDED">
+
+    <TableLayout
+        android:id="@+id/nav_pvt_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/table_border">
+
+        <!-- Define a TableRow for each field -->
+        <TableRow>
+            <TextView
+                android:text="GPS UTC Time:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/gps_utc_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Latitude:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Longitude:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Height (Ellipsoid):"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/height_ellipsoid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Height (Mean Sea Level):"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/height_msl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Fix Type:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fix_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Horizontal Accuracy:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/horizontal_accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Vertical Accuracy:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/vertical_accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

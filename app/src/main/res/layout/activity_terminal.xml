@@ -1,0 +1,81 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar (AppBar) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="Terminal"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- ScrollView for Incoming Data -->
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/incomingDataText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:padding="8dp" />
+        </ScrollView>
+
+        <!-- Horizontal Layout for Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Pause/Resume Button -->
+            <Button
+                android:id="@+id/pauseResumeButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="Resume"
+                android:backgroundTint="?attr/colorPrimary"
+                android:textColor="@android:color/white" />
+
+            <!-- Clear Button -->
+            <Button
+                android:id="@+id/ClearButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="2"
+                android:backgroundTint="?attr/colorAccent"
+                android:text="Clear"
+                android:textColor="@android:color/white" />
+
+            <!-- Save Button -->
+            <ImageView
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_save_foreground"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
